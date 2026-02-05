@@ -37,7 +37,9 @@ This project was created for learning and portfolio demonstration to explore adv
 🔤 Google Fonts
 🎭 Remix Icons / Font Awesome
 
-<img width="500" height="500" alt="Burger Icon" src="https://github.com/user-attachments/assets/b7452274-b4bf-45f7-b6c4-8a6d0e0521f5" />
-<img width="500" height="500" alt="Burger Icon" src="https://github.com/user-attachments/assets/b7452274-b4bf-45f7-b6c4-8a6d0e0521f5" />
+<img width="1878" height="808" alt="img1_burgerjoint" src="https://github.com/user-attachments/assets/49aecbf1-3361-4eac-877d-1f4f1347aae8" />
+<img width="1838" height="687" alt="img2_burgerjoint" src="https://github.com/user-attachments/assets/996c317d-fdc6-4cf9-a363-bec9c490361b" />
+
+
 
 
