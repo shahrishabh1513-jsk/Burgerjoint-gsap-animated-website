@@ -10,7 +10,8 @@ This project was created for learning and portfolio demonstration to explore adv
 
 ✨ Features
 
-1️⃣ Smooth scrolling experience
+1️⃣ Smooth scrolling experience.
+
 2️⃣ Scroll-based animations using GSAP & ScrollTrigger
 3️⃣ Locomotive Scroll integration
 4️⃣ Animated hero burger interaction
@@ -32,3 +33,4 @@ This project was created for learning and portfolio demonstration to explore adv
 
 <img width="500" height="500" alt="Burger Icon" src="https://github.com/user-attachments/assets/b7452274-b4bf-45f7-b6c4-8a6d0e0521f5" />
 <img width="500" height="500" alt="Burger Icon" src="https://github.com/user-attachments/assets/b7452274-b4bf-45f7-b6c4-8a6d0e0521f5" />
+
