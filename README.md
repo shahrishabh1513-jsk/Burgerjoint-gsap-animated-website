@@ -12,13 +12,19 @@ This project was created for learning and portfolio demonstration to explore adv
 
 1️⃣ Smooth scrolling experience.
 
-2️⃣ Scroll-based animations using GSAP & ScrollTrigger
-3️⃣ Locomotive Scroll integration
-4️⃣ Animated hero burger interaction
-5️⃣ Multi-section storytelling layout
-6️⃣ Responsive design adjustments
-7️⃣ Clean navigation and footer layout
-8️⃣ Modern gradient-based styling
+2️⃣ Scroll-based animations using GSAP & ScrollTrigger.
+
+3️⃣ Locomotive Scroll integration.
+
+4️⃣ Animated hero burger interaction.
+
+5️⃣ Multi-section storytelling layout.
+
+6️⃣ Responsive design adjustments.
+
+7️⃣ Clean navigation and footer layout.
+
+8️⃣ Modern gradient-based styling.
 
 🛠️ Technologies Used
 
@@ -33,4 +39,5 @@ This project was created for learning and portfolio demonstration to explore adv
 
 <img width="500" height="500" alt="Burger Icon" src="https://github.com/user-attachments/assets/b7452274-b4bf-45f7-b6c4-8a6d0e0521f5" />
 <img width="500" height="500" alt="Burger Icon" src="https://github.com/user-attachments/assets/b7452274-b4bf-45f7-b6c4-8a6d0e0521f5" />
+
 
