@@ -1,0 +1,950 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: hidden !important;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Nav Top Css - Updated and centered */
+#nav_top {
+  width: 100%;
+  height: 10vh;
+  padding: 0 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#nav_top > img {
+  height: 40px;
+}
+
+#nav_top > button {
+  padding: 10px 24px;
+  font-family: "Anton", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+#nav_top > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+#nav_top > i {
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Burger Image - Updated for smooth animation */
+#bottle {
+  position: absolute;
+  height: 85vh;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 990;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
+  will-change: transform;
+}
+
+/* When burger is fixed at page5 */
+#bottle.fixed-position {
+  position: fixed !important;
+  left: 10% !important;
+  top: 20% !important;
+  transform: scale(0.4) rotate(-15deg) !important;
+  z-index: 999;
+}
+
+/* Page1 Css */
+#page1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(135deg, #FFFAF0 0%, #FFF5E6 100%);
+}
+
+#page1 h1 {
+  width: 70vw;
+  font-family: "Anton", sans-serif;
+  font-size: 12vw;
+  font-weight: 900;
+  text-align: center;
+  word-spacing: -1.5vw;
+  text-transform: uppercase;
+  line-height: 11vw;
+  background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.05em;
+}
+
+#page1_dog_image {
+  height: 20vh;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-25deg);
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* Page 2 Css */
+#page2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8vw;
+  background-color: #FFF9F3;
+}
+
+#page2_part1 {
+  width: 35vw;
+  height: 70vh;
+}
+
+#page2_part1 h3 {
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 20px;
+  color: #FF6B35;
+  font-size: 28px;
+}
+
+#page2_part1 h1 {
+  width: 100%;
+  height: auto;
+  font-size: 5vw;
+  line-height: 5.5vw;
+  font-weight: 500;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  word-spacing: -0.5vmax;
+  background: linear-gradient(135deg, #FF6B35 0%, #333 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+#page2_part1 > p {
+  font-family: 'Dosis', sans-serif;
+  color: #555;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+#page2_part1 > button {
+  padding: 14px 32px;
+  font-family: "Anton", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+  background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+#page2_part1 > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+#page2_part2 {
+  width: 30vw;
+  height: 65vh;
+  padding: 40px;
+  border: 2px solid rgba(255, 107, 53, 0.2);
+  border-radius: 20px;
+  font-family: 'Dosis', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+#page2_part2 h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #333;
+}
+
+#page2_part2 h5 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #FF6B35;
+}
+
+#box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 2px solid rgba(255, 107, 53, 0.1);
+  margin-bottom: 25px;
+  padding-top: 20px;
+}
+
+#page2_part2 p {
+  font-size: 13px;
+  width: 15vw;
+  color: #666;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+#box h2 {
+  font-size: 48px;
+  font-family: "Anton", sans-serif;
+  color: #FF6B35;
+  margin-right: 15px;
+}
+
+#box h2 span {
+  font-size: 24px;
+  color: #888;
+}
+
+/* page 3 css */
+#page3 {
+  width: 100vw;
+  height: 110vh;
+  padding: 0 8vw;
+  background: linear-gradient(135deg, #FFF9F3 0%, #FFF5EB 100%);
+}
+
+#page3 h1 {
+  width: 85vw;
+  font-size: 15vw;
+  line-height: 15vw;
+  font-weight: 500;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.05em;
+}
+
+#page3_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+#page3_text_part1 a img {
+  width: 30vw;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#page3_text_part1 a img:hover {
+  transform: scale(1.02);
+}
+
+#page3_text_part1 h5 {
+  width: 28vw;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 28px;
+  font-family: 'Dosis', sans-serif;
+  color: #333;
+  font-weight: 500;
+}
+
+#page3_text_part2 {
+  width: 35vw;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+#page3_text_part2 h5 {
+  width: 100%;
+  font-size: 18px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  color: #555;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+#page3_text_part2 h2 {
+  margin-top: 0;
+  font-family: "Anton", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #FF6B35;
+  margin-bottom: 20px;
+}
+
+#page3_text_part2 p {
+  margin-top: 15px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+  color: #666;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+/* Page 4 css */
+#page4 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  background: linear-gradient(135deg, #FFF 0%, #FFF9F3 100%);
+  justify-content: center;
+  align-items: center;
+}
+
+#page4_color_image1 {
+  width: 22vw;
+  filter: drop-shadow(0 10px 20px rgba(255, 107, 53, 0.3));
+}
+
+#page4_color_image1_text {
+  width: 18vw;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  color: #333;
+  text-align: center;
+}
+
+#page4_color_image1_text h4 {
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FF6B35;
+  font-size: 20px;
+}
+
+#page4_color_image1_text p {
+  font-family: 'Dosis', sans-serif;
+  color: #666;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+#page4_color_image2 {
+  width: 24vw;
+  filter: drop-shadow(0 10px 20px rgba(255, 107, 53, 0.3));
+}
+
+#page4_color_image2_text {
+  width: 18vw;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  color: #333;
+  text-align: center;
+}
+
+#page4_color_image2_text h4 {
+  width: 100%;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF6B35;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#page4_color_image2_text p {
+  font-family: 'Dosis', sans-serif;
+  color: #666;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+#page4_color_image3 {
+  width: 26vw;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+#page4_color_image3_text {
+  width: 20vw;
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  color: #333;
+  text-align: center;
+}
+
+#page4_color_image3_text h4 {
+  width: 100%;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 20px;
+}
+
+#page4_color_image3_text p {
+  font-family: 'Dosis', sans-serif;
+  color: #666;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+#page4_color_image4 {
+  width: 18vw;
+  height: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform: rotate(-15deg);
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+/* Page 5 css - Updated to accommodate fixed burger */
+#page5 {
+  width: 100vw;
+  height: 110vh;
+  padding: 60px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #FFF9F3 0%, #FFF5EB 100%);
+  position: relative;
+  z-index: 2;
+}
+
+#page5 h5 {
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  color: #FF6B35;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+#page5 h1 {
+  width: 50vw;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  font-weight: 600;
+  font-size: 5vw;
+  background: linear-gradient(135deg, #333 0%, #666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#page5_image_box {
+  width: 100%;
+  height: 70vh;
+  padding: 0 5vw 0 25vw; /* Added left padding for fixed burger */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 3;
+}
+
+#page5_bottel {
+  width: 16vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 4;
+}
+
+#page5_bottel:hover {
+  transform: translateY(-10px);
+}
+
+#page5_bottel h4 {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  color: #333;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#page5_bottel img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+#image11, #image22, #image33, #image44, #image55 {
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+#page5_bottel:hover img {
+  transform: scale(1.05);
+}
+
+#page5_bottel h6 {
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #FF6B35;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+/* Page 6 */
+#page6 {
+  width: 100vw;
+  height: 90vh;
+  padding: 0 8vw;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  background: linear-gradient(135deg, #FFF 0%, #FFF9F3 100%);
+  position: relative;
+  z-index: 2;
+}
+
+#page6 img {
+  width: 45vw;
+  height: 60vh;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+#page6_part2 {
+  padding: 0 2vw;
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page6_part2 h5 {
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  color: #FF6B35;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+#page6_part2 h1 {
+  margin-top: 0;
+  width: 100%;
+  font-family: "Anton", sans-serif;
+  font-size: 3.5vw;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+#page6_part2 p {
+  margin-top: 0;
+  font-weight: 300;
+  font-family: "Dosis", sans-serif;
+  color: #555;
+  line-height: 28px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#page6_part2 > button {
+  padding: 14px 32px;
+  font-size: 16px;
+  padding: 0.8vmax 1.5vmax;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  width: fit-content;
+}
+
+#page6_part2 > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  #page2_part1 h1 {
+    font-size: 4.5vw;
+  }
+  
+  #page3 h1 {
+    font-size: 12vw;
+  }
+  
+  #page5 h1 {
+    font-size: 4.5vw;
+  }
+  
+  /* Adjust for fixed burger on tablet */
+  #bottle.fixed-position {
+    left: 5% !important;
+    top: 25% !important;
+    transform: scale(0.3) rotate(-15deg) !important;
+  }
+  
+  #page5_image_box {
+    padding: 0 5vw 0 20vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav_top {
+    padding: 0 20px;
+  }
+  
+  #nav_top > i {
+    display: block;
+  }
+  
+  #nav_top > button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  /* Hide fixed burger on mobile */
+  #bottle.fixed-position {
+    display: none;
+  }
+  
+  #page5_image_box {
+    padding: 0 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #page5_bottel {
+    width: 40vw;
+    height: auto;
+  }
+}
+
+/* Footer Styles - Sleek Design */
+#footer {
+    width: 100vw;
+    height: 20vh; /* Reduced height */
+    background: #111111; /* Solid dark color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    border-top: 2px solid #FF6B35; /* Orange accent border */
+    padding: 0 5vw;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.footer-logo {
+    flex: 0 0 auto;
+}
+
+.footer-logo img {
+    height: 35px; /* Slightly smaller */
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo img:hover {
+    opacity: 1;
+}
+
+.footer-copyright {
+    text-align: center;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-copyright p {
+    color: #aaa; /* Lighter gray */
+    font-family: 'Dosis', sans-serif;
+    font-size: 13px; /* Smaller font */
+    margin-bottom: 5px;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* More space between links */
+    margin-top: 8px;
+}
+
+.footer-links a {
+    color: #FF8E53;
+    text-decoration: none;
+    font-size: 12px; /* Smaller font */
+    transition: all 0.3s ease;
+    font-weight: 400;
+    padding: 2px 0;
+    position: relative;
+}
+
+.footer-links a:hover {
+    color: #FF6B35;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #FF6B35;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+.footer-subscribe {
+    text-align: right;
+    flex: 0 0 auto;
+}
+
+.subscribe-btn {
+    padding: 10px 24px; /* Slightly smaller */
+    font-family: "Anton", sans-serif;
+    font-size: 14px; /* Smaller font */
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    background: #FF6B35; /* Solid color instead of gradient */
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 1px;
+}
+
+.subscribe-btn:hover {
+    transform: translateY(-2px);
+    background: #FF8E53;
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.subscribe-btn i {
+    font-size: 16px; /* Smaller icon */
+}
+
+.footer-newsletter {
+    color: #888; /* Lighter color */
+    font-family: 'Dosis', sans-serif;
+    font-size: 11px; /* Smaller font */
+    margin-top: 6px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* Responsive Footer */
+@media (max-width: 1024px) {
+    #footer {
+        height: 18vh; /* Even smaller on tablet */
+        padding: 0 4vw;
+    }
+    
+    .footer-content {
+        gap: 15px;
+    }
+    
+    .footer-logo img {
+        height: 30px;
+    }
+    
+    .subscribe-btn {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer {
+        height: auto;
+        padding: 25px 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-logo,
+    .footer-copyright,
+    .footer-subscribe {
+        width: 100%;
+    }
+    
+    .footer-logo img {
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .footer-subscribe {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .footer-copyright {
+        order: 3;
+        margin-top: 10px;
+    }
+    
+    .footer-links {
+        gap: 15px;
+        margin-top: 10px;
+    }
+    
+    .footer-links a {
+        font-size: 11px;
+    }
+    
+    .subscribe-btn {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer {
+        padding: 20px 15px;
+    }
+    
+    .footer-content {
+        gap: 15px;
+    }
+    
+    .footer-logo img {
+        height: 28px;
+    }
+    
+    .footer-copyright p {
+        font-size: 11px;
+    }
+    
+    .footer-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-links a {
+        font-size: 10px;
+    }
+    
+    .subscribe-btn {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+    
+    .footer-newsletter {
+        font-size: 10px;
+    }
+}
+
+/* Optional: Add a subtle background pattern to footer */
+#footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(255, 107, 53, 0.05) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255, 107, 53, 0.05) 0%, transparent 20%);
+    z-index: -1;
+}
