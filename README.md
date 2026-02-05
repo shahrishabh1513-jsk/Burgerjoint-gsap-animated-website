@@ -10,36 +10,25 @@ This project was created for learning and portfolio demonstration to explore adv
 
 ✨ Features
 
-Smooth scrolling experience
-
-Scroll-based animations using GSAP & ScrollTrigger
-
-Locomotive Scroll integration
-
-Animated hero burger interaction
-
-Multi-section storytelling layout
-
-Responsive design adjustments
-
-Clean navigation and footer layout
-
-Modern gradient-based styling
+1️⃣ Smooth scrolling experience
+2️⃣ Scroll-based animations using GSAP & ScrollTrigger
+3️⃣ Locomotive Scroll integration
+4️⃣ Animated hero burger interaction
+5️⃣ Multi-section storytelling layout
+6️⃣ Responsive design adjustments
+7️⃣ Clean navigation and footer layout
+8️⃣ Modern gradient-based styling
 
 🛠️ Technologies Used
 
-HTML5
+🌐 HTML5
+🎨 CSS3
+⚙️ JavaScript
+✨ GSAP (GreenSock Animation Platform)
+🎯 ScrollTrigger
+🌀 Locomotive Scroll
+🔤 Google Fonts
+🎭 Remix Icons / Font Awesome
 
-CSS3
-
-JavaScript
-
-GSAP (GreenSock Animation Platform)
-
-ScrollTrigger
-
-Locomotive Scroll
-
-Google Fonts
-
-Remix Icons / Font Awesome
+<img width="500" height="500" alt="Burger Icon" src="https://github.com/user-attachments/assets/b7452274-b4bf-45f7-b6c4-8a6d0e0521f5" />
+<img width="500" height="500" alt="Burger Icon" src="https://github.com/user-attachments/assets/b7452274-b4bf-45f7-b6c4-8a6d0e0521f5" />
