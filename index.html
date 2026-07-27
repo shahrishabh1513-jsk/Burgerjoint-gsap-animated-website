@@ -9,41 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ===== NAV ===== -->
     <nav id="nav_top">
         <img src="./img/Burgerlogo.png" alt="BurgerJoint Logo">
         <button>Order Now</button>
-        <i class="ri-menu-line" id="menu_icon"></i>
+        <i class="ri-menu-line"></i>
     </nav>
-
-    <!-- Mobile slide-out menu -->
-    <div id="mobile_menu">
-        <i class="ri-close-line" id="close_icon"></i>
-        <a href="#page1">Home</a>
-        <a href="#page2">Signature</a>
-        <a href="#page3">Our Story</a>
-        <a href="#page4">Ingredients</a>
-        <a href="#page5">Menu</a>
-        <a href="#page6">Fresh</a>
-        <button>Order Now</button>
-    </div>
-
-    <div id="main" data-scroll-container>
-
+    <div id="main">
         <img id="bottle" src="./img/Premium Burger.png" alt="Premium Burger">
 
-        <div id="page1" data-scroll-section>
+        <div id="page1">
             <h1>signature burger</h1>
-            <img id="page1_icon_image" src="./img/Burger Icon.png" alt="Burger Icon">
+            <img id="page1_dog_image" src="./img/Burger Icon.png" alt="Burger Icon">
         </div>
 
-        <div id="page2" data-scroll-section>
+        <div id="page2">
             <div id="page2_part1">
                 <h3>signature creation</h3>
                 <h1>Double Cheese Deluxe</h1>
@@ -57,7 +42,7 @@
             <div id="page2_part2">
                 <h3>CALORIES</h3>
                 <h5>Energy per serving</h5>
-                <div class="info-box">
+                <div id="box">
                     <h2>850 <span>kcal</span></h2>
                     <p>Perfectly balanced nutrition with high-quality proteins,
                         healthy fats, and essential carbs for sustained energy.
@@ -65,7 +50,7 @@
                 </div>
                 <h3>SIZE</h3>
                 <h5>Portion dimensions</h5>
-                <div class="info-box">
+                <div id="box">
                     <h2>6.5 <span>inch</span></h2>
                     <p>Generous size burger that satisfies even the biggest appetite
                         without compromising on flavor or quality.
@@ -74,7 +59,7 @@
                 <div id="page2_part2_text1">
                     <h3>PREP TIME</h3>
                     <h5>Fresh preparation</h5>
-                    <div class="info-box">
+                    <div id="box">
                         <h2>12 <span>min</span></h2>
                         <p>Cooked fresh to order ensuring maximum flavor,
                             juiciness, and temperature perfection.
@@ -84,11 +69,11 @@
             </div>
         </div>
 
-        <div id="page3" data-scroll-section>
+        <div id="page3">
             <h1>BurgerFeels</h1>
             <div id="page3_text">
                 <div id="page3_text_part1">
-                    <a href="#">
+                    <a href="">
                         <img src="./img/Burger Preparation.jpg" alt="Burger Preparation">
                     </a>
                     <h5>See it prepared by our master chef Anthony Ramsey</h5>
@@ -108,7 +93,7 @@
             </div>
         </div>
 
-        <div id="page4" data-scroll-section>
+        <div id="page4">
             <div id="page4_color1">
                 <img id="page4_color_image1" src="./img/Cheese Splash.png" alt="Cheese Splash">
                 <div id="page4_color_image1_text">
@@ -133,39 +118,12 @@
                         creamy finish that ties everything together.</p>
                 </div>
             </div>
-            <img id="page4_color_image4" src="./img/Bacon Strip.png" alt="Crispy Bacon Strip">
+
         </div>
 
-        <div id="page5" data-scroll-section>
-            <h5>Pick your favorite</h5>
-            <h1>Explore The Menu</h1>
-            <div id="page5_image_box">
-                <div class="burger-variety">
-                    <img src="./img/Burger Classic.png" alt="Classic Beef Burger">
-                    <h4>Classic Beef</h4>
-                </div>
-                <div class="burger-variety">
-                    <img src="./img/Burger BBQ Bacon.png" alt="BBQ Bacon Burger">
-                    <h4>BBQ Bacon</h4>
-                </div>
-                <div class="burger-variety">
-                    <img src="./img/Burger Spicy Jalapeno.png" alt="Spicy Jalape&ntilde;o Burger">
-                    <h4>Spicy Jalape&ntilde;o</h4>
-                </div>
-                <div class="burger-variety">
-                    <img src="./img/Burger Mushroom Swiss.png" alt="Mushroom Swiss Burger">
-                    <h4>Mushroom Swiss</h4>
-                </div>
-                <div class="burger-variety">
-                    <img src="./img/Burger Veggie Deluxe.png" alt="Veggie Deluxe Burger">
-                    <h4>Veggie Deluxe</h4>
-                </div>
-            </div>
-        </div>
 
-        <div id="page6" data-scroll-section>
+        <div id="page6">
             <div id="page6_part1">
-                <img src="./img/Kitchen Prep.jpg" alt="Fresh ingredients being prepared in the kitchen">
             </div>
             <div id="page6_part2">
                 <h5>Ingredients</h5>
@@ -178,7 +136,7 @@
             </div>
         </div>
 
-        <footer id="footer" data-scroll-section>
+        <footer id="footer">
             <div class="footer-content">
                 <div class="footer-logo">
                     <img src="./img/Burgerlogo.png" alt="BurgerJoint Logo">
@@ -201,7 +159,6 @@
             </div>
         </footer>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"
         integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ=="
@@ -209,6 +166,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"
         integrity="sha512-ko44b+LlYXwGZI6Gey6Tgrhew9JEPdSE6m7FqDyGGPDW+dDOjsCElEtiUIRRtCXRNHwKheBCnHCQSMdUz/pgkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/b90a16c0c9.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
